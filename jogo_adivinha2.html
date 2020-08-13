@@ -1,0 +1,27 @@
+<meta charset ="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+        return Math.round(Math.random() * n);
+    }
+
+    var numeroPensado = sorteia(10);
+    var chute = parseInt(prompt("Já pensei em um numero de 0 a 10. Qual você acha que é ? "));
+
+    if(chute == numeroPensado) {
+        mostrar("Parabéns, você acertou!!! eu pensei no " + numeroPensado);
+    } else {
+        mostrar("Poxa, você errou! eu tinha pensado no número " + numeroPensado);
+    }
+
+</script>

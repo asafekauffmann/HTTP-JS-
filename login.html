@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    var loginCadastro = "Asafe";
+    var senhaCadastrada = "Asafe123";
+
+    // variáveis utilizadas no while para 3 tentativas.*5
+    var maximoTentativas = 3;
+    var tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentativas) {
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+        if(loginCadastro == loginInformado && senhaCadastrada == senhaInformada) {
+            alert("Bem-vindo ao sistema,  " + loginInformado);
+            tentativaAtual = maximoTentativas;
+        } else {
+            if(tentativaAtual == 3) {
+                alert("Numero permitido de tentativas ultrapassado!");
+            } else {
+                alert("Login inválido. Tente novamente");
+            }
+        }
+        tentativaAtual = tentativaAtual + 1;
+    }
+
+</script>

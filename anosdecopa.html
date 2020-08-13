@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+    var limite = parseInt(prompt("Entre com a data limite"));
+    var anoCopa = 1930;
+
+
+    // extrutura de repetição while.
+    while(anoCopa <= limite) { 
+    // while(true) !ENQUANTO!- sempre repetir o que esta dentro enquanto for true.
+        mostrar("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+
+    mostrar("FIM");
+
+</script>

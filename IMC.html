@@ -1,0 +1,35 @@
+<meta charset="UTF-8"> 
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+            pulaLinha();
+    }
+
+    var personPeso= 80;
+    var personAltura= 1.81;
+            /* Agora criarei uma variável personImc no qual recebera o valor
+            da variável peso / altura * altura... 
+            */
+    var personImc= personPeso / (personAltura * personAltura);
+
+    mostrar("O seu Indíce de Massa Corporal é :" + personImc);
+
+    // Para testar com alguem...
+    var amigoPeso= 100;
+    var amigoAltura= 1.70;
+    var amigoImc= amigoPeso / (amigoAltura * amigoAltura);
+
+    mostrar("O Indice de Massa Corporal do seu amigo é :" + amigoImc);
+
+</script>
+
+
+
+

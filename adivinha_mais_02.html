@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredos = [5,7,3,10,2];
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+
+        var achou = false; 
+
+        for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+            if(input.value == segredos[posicao]) {
+
+            alert("Você ACERTOU !");
+            var achou = true;
+            break;
+            } 
+        }
+
+        if (achou == false) {
+        alert("Você ERROU!")
+        }
+
+    }
+
+    input.value = ""; // limpa o input
+    input.focus();
+
+    var button = document.querySelector("button"); //jogando o button do HTML para variável.
+    button.onclick = verifica;  // O botão na ação onClick guardará e executara a função.
+
+</script>

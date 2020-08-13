@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10); // Utilizar função para gerar um número automatico.
+    var chute = parseInt(prompt("Digite seu chute! "));
+    
+    // Math.random(); - Math.round(Math.random) * 10; *10 será para arredondar a casa decimal,
+    //deixando o número inteiro de 0 a 10.
+
+    if(chute == numeroPensado) {
+        mostrar("Você acertou!!");
+
+    } else {
+        mostrar("Você errou, o número pensado foi " + numeroPensado);
+    }
+    
+</script>
